@@ -1,7 +1,6 @@
 # 🧠 Smart Todo List with AI
 
-A full-stack web application for intelligent task management, built as part of the **Full Stack Developer Assignment**.  
-The system allows users to manage tasks, add daily context (messages, emails, notes), and leverage AI features for **task prioritization, deadline suggestions, and context-aware recommendations**.
+This Smart Todo List project enables users to create, update, and manage tasks efficiently, add and track daily context from various sources (messages, emails, notes), and leverage AI-powered features for smart task prioritization, automated deadline suggestions, and context-aware task descriptions. It integrates a Django REST API backend, a Next.js + Tailwind CSS frontend, and optional AI modules for enhanced productivity insights.
 
 ---
 
@@ -17,7 +16,7 @@ The system allows users to manage tasks, add daily context (messages, emails, no
   - `GET /api/context/` – Fetch daily context entries
   - `POST /api/context/` – Add daily context (WhatsApp, email, note)
 - **AI Suggestions API**
-  - `POST /api/ai/suggestions/` – Generate AI-powered task suggestions and prioritization
+  - `POST /api/tasks/ai-suggest/` – Generate AI-powered task suggestions and prioritization
 
 ### AI Module
 - Context processing: Analyzes WhatsApp messages, emails, and notes
@@ -54,36 +53,6 @@ The system allows users to manage tasks, add daily context (messages, emails, no
 
 **AI Integration**
 - LM Studio (local LLM hosting) **or** OpenAI / Claude / Gemini APIs
-
----
-
-## 📂 Project Structure
-
-```
-smart-todo/
-│
-├── backend/
-│   ├── manage.py
-│   ├── requirements.txt
-│   ├── core/                # Django settings, URLs
-│   ├── tasks/               # Task models, serializers, views
-│   ├── categories/          # Category models, serializers, views
-│   ├── context/             # Context models, serializers, views
-│   └── ai_module/           # AI processing logic
-│
-├── frontend/
-│   ├── app/
-│   │   ├── page.tsx         # Dashboard
-│   │   ├── task/            # Task management UI
-│   │   ├── context/         # Context input UI
-│   ├── lib/                 # API calls & type definitions
-│   ├── public/
-│   ├── styles/
-│   │   └── globals.css
-│   ├── .env.local
-│   └── package.json
-└── README.md
-```
 
 ---
 
@@ -159,7 +128,7 @@ Frontend will run on: **http://localhost:3000/**
   ```
 
 ### **AI Suggestions**
-- `POST /api/ai/suggestions/`  
+- `POST /api/tasks/ai-suggest/`  
   **Body:**
   ```json
   {
@@ -169,21 +138,3 @@ Frontend will run on: **http://localhost:3000/**
   }
   ```
 
----
-
-## 📅 Submission Info
-- **Deadline:** 15 August 2025, 11:55 PM
-- **Submission Form:** [https://forms.gle/CUv48PxFwG59RCEt9](https://forms.gle/CUv48PxFwG59RCEt9)
-
----
-
-## 📊 Evaluation Criteria
-- Functionality – 40%
-- Code Quality – 25%
-- UI/UX – 20%
-- Innovation – 15%
-
----
-
-## 📜 License
-This project is for **assignment purposes** only.
