@@ -1,4 +1,4 @@
-# 🧠 Smart Todo List with AI
+# 🧠 Smart Todo List
 
 This Smart Todo List project enables users to create, update, and manage tasks efficiently, add and track daily context from various sources (messages, emails, notes), and leverage AI-powered features for smart task prioritization, automated deadline suggestions, and context-aware task descriptions. It integrates a Django REST API backend, a Next.js + Tailwind CSS frontend, and optional AI modules for enhanced productivity insights.
 
