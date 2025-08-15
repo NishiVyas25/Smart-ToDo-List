@@ -96,6 +96,30 @@ Frontend will run on: **http://localhost:3000/**
 
 ---
 
+## 📸 Screenshots
+
+### Backend Dashboard
+![Dashboard Screenshot](./Screenshots/Backend/backend.png)
+
+### Add Task Page
+![Add Task Screenshot](./Screenshots/Backend/api_task.png)
+
+### Context Page
+![Context Page Screenshot](./Screenshots/Backend/api_context.png)
+
+### AI Suggest Page
+![Dashboard Screenshot](./Screenshots/Backend/ai suggest page.png)
+
+### Frontend Page
+![Dashboard Screenshot](./Screenshots/Frontend/front.png)
+
+### Add Task Page
+![Dashboard Screenshot](./Screenshots/Frontend/add task.png)
+
+### Add Context Page
+![Dashboard Screenshot](./Screenshots/Frontend/add context.png)
+---
+
 ## 📡 API Documentation
 
 ### **Tasks**
